@@ -1,3 +1,5 @@
+#[macro_use]
+extern crate clap;
 
 mod display;
 mod pcm;
@@ -5,6 +7,6 @@ mod pcm;
 
 pub fn main() {
 
-    crate::display::MatrixDisplay::main().unwrap();
+    crate::display::MatrixDisplay::main();
 
 }
